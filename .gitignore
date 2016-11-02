@@ -1,0 +1,27 @@
+# Visual Studio 2015 cache/options directory
+.vs/
+
+
+# User-specific files
+*.suo
+*.user
+
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+
+# Publish results
+build/
+PublishProfiles/
+
+
+# Bundle/Reference files
+source/Website/Assets/css/site.min.css
+source/Website/Assets/js/site.min.js
+source/Website/Assets/_references.js
+
+
+# Lock files
+source/Website/project.lock.json
