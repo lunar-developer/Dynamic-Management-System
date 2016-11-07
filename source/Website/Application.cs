@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace LunarSoft.DMS.Website
+namespace LunarSoft.Dms.Website
 {
     public class Application
     {

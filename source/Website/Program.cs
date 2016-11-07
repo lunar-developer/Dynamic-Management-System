@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace LunarSoft.DMS.Website
+namespace LunarSoft.Dms.Website
 {
     public class Program
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace LunarSoft.DMS.Website.Controllers
+namespace LunarSoft.Dms.Website.Controllers
 {
     public class HomeController : Controller
     {
