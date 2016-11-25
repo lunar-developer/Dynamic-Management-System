@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Reflection;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,7 +25,8 @@ namespace LunarSoft.Dms.Website
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvc();
+            Assembly assembly = Assembly.LoadFrom(@"E:\Lunar\Projects\LunarSoft\C-Sharp\Dynamic-Management-System\source\Website\Bin\Debug\net46\win7-x64\LunarSoft.Dms.Modules.MasterData.dll");
+            services.AddMvc().AddApplicationPart(assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

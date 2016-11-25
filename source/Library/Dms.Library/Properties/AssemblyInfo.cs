@@ -2,13 +2,13 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Dms.Modules.MasterData")]
-[assembly: AssemblyDescription("Master Data Management")]
+[assembly: AssemblyTitle("Dms.Library")]
+[assembly: AssemblyDescription("The shared library of Dms system")]
 [assembly: AssemblyCompany("LunarSoft")]
-[assembly: AssemblyProduct("LunarSoft.Dms.Modules.MasterData")]
+[assembly: AssemblyProduct("LunarSoft.Dms.Library")]
 [assembly: AssemblyCopyright("Copyright © 2016")]
 [assembly: ComVisible(false)]
-[assembly: CLSCompliant(false)]
-[assembly: Guid("b8b2b461-d034-4a15-8231-14807d5d6962")]
+[assembly: CLSCompliant(true)]
+[assembly: Guid("3a4d037d-427e-4be1-a876-777fda0a544f")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

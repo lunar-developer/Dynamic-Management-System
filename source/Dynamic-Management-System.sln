@@ -12,9 +12,21 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dms.Modules.MasterData", "Modules\Dms.Modules.MasterData\Dms.Modules.MasterData.csproj", "{B8B2B461-D034-4A15-8231-14807D5D6962}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global", "Global", "{9F2A370E-E4A6-4ECC-8C11-CF52F5B91F4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rules", "Rules", "{676B7924-92DA-4C0E-A88A-B41CCE5DD29F}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\Global\Rules\LunarSoft-Rules.ruleset = ..\..\Global\Rules\LunarSoft-Rules.ruleset
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{7785B112-C3D1-4632-A63B-D06FD661E77A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Global\Scripts\Module-Post-Build.bat = ..\..\Global\Scripts\Module-Post-Build.bat
+		..\..\Global\Scripts\Module.bat = ..\..\Global\Scripts\Module.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{5F9B1099-E476-4FC0-8E1F-2FD9B06E4B5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dms.Library", "Library\Dms.Library\Dms.Library.csproj", "{3A4D037D-427E-4BE1-A876-777FDA0A544F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +42,10 @@ Global
 		{B8B2B461-D034-4A15-8231-14807D5D6962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8B2B461-D034-4A15-8231-14807D5D6962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8B2B461-D034-4A15-8231-14807D5D6962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A4D037D-427E-4BE1-A876-777FDA0A544F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A4D037D-427E-4BE1-A876-777FDA0A544F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A4D037D-427E-4BE1-A876-777FDA0A544F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A4D037D-427E-4BE1-A876-777FDA0A544F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +53,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B26B450E-7369-4207-954E-55D9B7E362E9} = {7EF488FB-6E30-45D2-AE48-E4645025FF8D}
 		{B8B2B461-D034-4A15-8231-14807D5D6962} = {A50DDB2E-BC6D-4A74-980B-72FA737E23DD}
+		{676B7924-92DA-4C0E-A88A-B41CCE5DD29F} = {9F2A370E-E4A6-4ECC-8C11-CF52F5B91F4E}
+		{7785B112-C3D1-4632-A63B-D06FD661E77A} = {9F2A370E-E4A6-4ECC-8C11-CF52F5B91F4E}
+		{3A4D037D-427E-4BE1-A876-777FDA0A544F} = {5F9B1099-E476-4FC0-8E1F-2FD9B06E4B5E}
 	EndGlobalSection
 EndGlobal

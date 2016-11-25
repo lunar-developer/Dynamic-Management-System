@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8B2B461-D034-4A15-8231-14807D5D6962}</ProjectGuid>
+    <ProjectGuid>{3A4D037D-427E-4BE1-A876-777FDA0A544F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LunarSoft.Dms.Modules.MasterData</RootNamespace>
-    <AssemblyName>LunarSoft.Dms.Modules.MasterData</AssemblyName>
+    <RootNamespace>LunarSoft.Dms.Library</RootNamespace>
+    <AssemblyName>LunarSoft.Dms.Library</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -38,28 +38,18 @@
     <AssemblyOriginatorKeyFile>..\..\..\..\Global\Key\LunarSoft-Key.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions">
-      <HintPath>..\..\..\..\Global\Dynamic Link Library\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNetCore.Mvc.Core">
-      <HintPath>..\..\..\..\Global\Dynamic Link Library\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures">
-      <HintPath>..\..\..\..\Global\Dynamic Link Library\Microsoft.AspNetCore.Mvc.ViewFeatures.dll</HintPath>
+    <Reference Include="LunarSoft.SqlServerConnector">
+      <HintPath>..\..\..\..\Global\Dynamic Link Library\LunarSoft.SqlServerConnector.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\MasterDataController.cs" />
+    <Compile Include="DataAccess\DataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Views\MasterData\TableView.cshtml" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>call "$(SolutionDir)/../../Global/Scripts/Module.bat" $(TargetDir) $(ProjectDir)</PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
